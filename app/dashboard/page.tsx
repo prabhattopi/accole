@@ -11,7 +11,7 @@ interface Product {
   img: string;
   quantity: number;
 }
-
+// 
 const Dashboard = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [newProduct, setNewProduct] = useState({ name: '', img: '', quantity: 0 });
