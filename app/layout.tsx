@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { AuthProvider } from "./context/AuthContext";
-
+import PrelineScript from "./components/PrelineScript";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -33,6 +33,7 @@ export default function RootLayout({
           {children}
         </AuthProvider>
       </body>
+      <PrelineScript />
     </html>
   );
 }

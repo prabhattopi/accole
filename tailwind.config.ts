@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from 'tailwindcss';
-import preline from 'preline/plugin'; // Use ES module import for Preline
+
 
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/preline/dist/*.js', // Preline content
+  './node_modules/preline/preline.js',
   ],
   theme: {
     extend: {
@@ -17,8 +18,8 @@ const config: Config = {
     },
   },
   plugins: [
-    preline, // Use the imported Preline plugin
-  ],
+    require('preline/plugin'),
+],
 };
 
 export default config;

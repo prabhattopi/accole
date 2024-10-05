@@ -3,7 +3,6 @@
 
 import { useState, useEffect, useContext } from 'react';
 import { fetchProducts, addProduct, updateProduct, deleteProduct } from '../hooks/api';
-import PrelineScript from '../components/PrelineScript';
 import Image from 'next/image';
 import { useAuth } from '../context/AuthContext';
 interface Product {
@@ -82,7 +81,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <PrelineScript />
+ 
 
       <div className="container mx-auto p-6">
       <button onClick={logout} className='btn btn-primary'>Logout</button>
