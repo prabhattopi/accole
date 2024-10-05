@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'; // Default to localhost if not set
 
 // Helper function for setting up headers with JWT token
